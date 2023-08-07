@@ -1,0 +1,161 @@
+input {
+    cursor: pointer;
+}
+
+select {
+    padding: 0.2rem 0.6rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-section {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section>.middle-container {
+    padding: 1rem;
+    width: 26%;
+}
+
+.main-section>.middle-container>.main-heading {
+    text-align: center;
+}
+
+.main-section>.middle-container>.main-heading>h1 {
+    color: #007f5f;
+}
+
+.main-section>.middle-container>.main-heading>h1 {
+    position: relative;
+}
+
+.main-section>.middle-container>.main-heading>h1::before,
+.main-section>.middle-container>.main-heading>h1::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    /* Adjust the width as needed */
+    height: 1px;
+    /* Border thickness */
+    background-color: lightgray;
+    /* Border color */
+}
+
+.main-section>.middle-container>.main-heading>h1::before {
+    top: 50%;
+    left: -1px;
+    /* Adjust the position before the text */
+    transform: translateY(-50%);
+}
+
+.main-section>.middle-container>.main-heading>h1::after {
+    top: 50%;
+    right: -1px;
+    /* Adjust the position after the text */
+    transform: translateY(-50%);
+}
+
+.main-section>.middle-container>.box-1, .box-2, .box-3 {
+    border: 2px solid gray;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.main-section>.middle-container>.box-1>.hidden-info-1{
+    margin-left: 0.6rem;
+    margin-top: 0.5rem;
+    display: none;
+}
+.main-section>.middle-container>.box-2>.hidden-info-2{
+    margin-left: 0.6rem;
+    margin-top: 0.5rem;
+    display: none;
+}
+.main-section>.middle-container>.box-3>.hidden-info-3{
+    margin-left: 0.6rem;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.main-section>.middle-container>.box-1>.hidden-info-1> :nth-child(2),.box-2>.hidden-info-2> :nth-child(2),.box-3>.hidden-info-3> :nth-child(2) {
+    margin-top: 0.5rem;
+}
+
+.main-section>.middle-container>.box-1>.hidden-info-1> :nth-child(3),.box-2>.hidden-info-2> :nth-child(3),.box-3>.hidden-info-3> :nth-child(3) {
+    margin-top: 0.5rem;
+}
+
+.main-section>.middle-container>.box-1>.hidden-info-1>.s-and-c,.box-2>.hidden-info-2>.s-and-c,.box-3>.hidden-info-3>.s-and-c {
+    margin-left: 1.2rem;
+}
+
+.main-section>.middle-container>.box-1>.hidden-info-1>.s-and-c> :nth-child(2),.box-2>.hidden-info-2>.s-and-c> :nth-child(2),.box-3>.hidden-info-3>.s-and-c> :nth-child(2){
+    margin-left: 1rem;
+}
+
+.main-section>.middle-container>.box-1>.radio-field-1,.box-2>.radio-field-2,.box-3>.radio-field-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-section>.middle-container>.box-1>.radio-field-1>.price,.box-2>.radio-field-2>.price,
+.box-3>.radio-field-3>.price {
+    display: flex;
+    align-items: center;
+}
+
+.main-section>.middle-container>.box-1>.radio-field-1>.price> :nth-child(2),
+.box-2>.radio-field-2>.price>:nth-child(2),
+.box-3>.radio-field-3>.price> :nth-child(2) {
+    margin-left: 1rem;
+}
+
+.main-section>.middle-container>.total-amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.main-section>.middle-container>.total-amount>.amount>p>span {
+    font-weight: bold;
+}
+.main-section>.middle-container>.total-amount>.offer-text>p{
+    color:#007f5f;
+    font-weight: bold;
+}
+
+.main-section>.middle-container>.atc_btn {
+    width: 100%;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    font-size: medium;
+    padding: 0.5rem 0;
+    background-color: #007f5f;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    color: #fff;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .main-section .middle-container {
+        width: 80%;  
+    }
+}
